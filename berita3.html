@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Berita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff4400ee;
+            color: #fff;    
+            text-align: center;
+            margin-bottom:0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0; /* Mengurangi padding atas dan bawah */
+            margin-top: 0; /* Mengurangi margin-top */
+        }
+        .logo {
+            position: absolute;
+            left: 10px;
+        }
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                padding: 20px 0;
+            }
+            .logo {
+                left: 90px;
+            }
+            h1 {
+                margin-top: 10px;
+            }
+        }
+
+        /* Gaya lainnya tetap sama */
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            margin-top: 150px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .meta {
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        .meta span {
+            margin-right: 10px;
+        }
+        .content {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .back-link a {
+            color: #333;
+            font-weight: bold;
+        }
+        .back-link a:hover {
+            color: #007bff;
+        }
+        
+        .carousel {
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Logo.png" alt="Logo" class="logo" width="65" height="65">
+    <h1>Judul Berita 3</h1>
+</header>
+
+<main class="content-wrapper">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="kampus 1.1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="kampus 1.2.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    <div class="container">
+        <div class="meta">
+            <span>Tanggal: 10 Juni 2024</span>
+            <span>Kategori: Berita Utama</span>
+        </div>
+        
+        <div class="content">
+            <p>Ini adalah deskripsi singkat tentang berita ini. Berita ini berisi informasi penting yang perlu diketahui oleh masyarakat. Anda dapat menambahkan lebih banyak konten di sini sesuai kebutuhan.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum, urna sed congue convallis, ligula lectus pharetra nisl, at fringilla magna justo in leo. Sed nec tortor eget velit molestie consectetur. Integer tempor mauris nec urna sodales, eget tempor mauris maximus. Phasellus sollicitudin velit et justo molestie, ac aliquet nulla sollicitudin. Vestibulum malesuada, felis ut gravida pellentesque, eros lorem fermentum purus, vitae iaculis urna libero eu sapien. Mauris sit amet metus ut lectus vehicula egestas. Quisque id volutpat elit. Nulla facilisi. Nullam luctus neque in enim suscipit, ut sodales ante viverra. Integer eget erat ex. Donec aliquam pharetra odio, a tempus elit dapibus id. Mauris eget diam vestibulum, suscipit nunc in, fermentum ligula. Morbi nec efficitur orci.</p>
+            
+            <p><a href="beranda.html">Kembali ke Halaman Berita</a></p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
